@@ -32,7 +32,7 @@ if uploaded_files:
         # 交替放入左右两列
         if i % 2 == 0:
             with col1:
-                st.image(img, caption=file, use_column_width=True)
+                st.image(img, caption=file, use_container_width=True)
         else:
             with col2:
-                st.image(img, caption=file, use_column_width=True)
+                st.image(img, caption=file, use_container_width=True)
