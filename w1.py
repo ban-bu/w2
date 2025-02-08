@@ -34,7 +34,7 @@ st.subheader("📸 Uploaded Images")
 uploaded_files = sorted(os.listdir(UPLOAD_FOLDER), reverse=True)  # 按时间倒序排列
 
 if uploaded_files:
-    col1, col2 = st.columns(6)  # 创建两列
+    col1, col2,col3,col4,col5,col6= st.columns(6)  # 创建两列
 
     for i, file in enumerate(uploaded_files):
         img_path = os.path.join(UPLOAD_FOLDER, file)
