@@ -41,9 +41,22 @@ if uploaded_files:
         img = Image.open(img_path)
 
         # 交替放入左右两列并添加图片名称
-        if i % 2 == 0:
+        if i % 6 == 0:
             with col1:
                 st.image(img, caption=f"{file}", use_container_width=True)
-        else:
+        if i % 6 == 1:
             with col2:
                 st.image(img, caption=f"{file}", use_container_width=True)
+        if i % 6 == 2:
+            with col3:
+                st.image(img, caption=f"{file}", use_container_width=True)
+        if i % 6 == 3:
+            with col4:
+                st.image(img, caption=f"{file}", use_container_width=True)
+        if i % 6 == 4:
+            with col5:
+                st.image(img, caption=f"{file}", use_container_width=True)
+        if i % 6 == 5:
+            with col6:
+                st.image(img, caption=f"{file}", use_container_width=True)
+        
